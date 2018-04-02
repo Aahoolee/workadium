@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Workadium</title>
 </head>
 <body>
@@ -22,15 +22,19 @@
                 </div>
                 <div class="header__content-right">
                     <div class="header__content">
-                        <a href="callto:+78000039210" class="header__content-phone">8(800)00-392-10</a>
-                        <div class="header__content-schedule">График работы</div>
+                        <a href="tel:+78000039210" class="header__content-phone">8 (800) 00-392-10</a>
+                        <button class="header__content-schedule">График работы</button>
+                        <div class="header__content-schedule-work">
+                            <div class="header__content-schedule-day">пн-вс: 09:00-20:00</div>
+                            <div class="header__content-schedule-time">обед: 14:00-14:30</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="about">
             <div class="about__pic">
-                <!--<img src="img/banner.jpg" height="359" width="1100" alt="coworking" class="about__pic">-->
+                <img src="img/banner.jpg" height="359" width="1100" alt="coworking" class="about__pic">
             </div>
         </div>
         <div class="container">
@@ -39,22 +43,22 @@
                     <ul class="sidebar__list">
                         <li class="sidebar__item">
                             <div class="sidebar__item">
-                                <span class="sidebar__icon">
-                                <img src="img/main-icon.png" height="15" width="17" alt="main" class="sidebar__icon-pic">
-                                </span>
-                                <span class="sidebar__text">Главная</span>
+                                <!--<span class="sidebar__icon">-->
+                                <!--<img src="img/main-icon.png" height="15" width="17" alt="main" class="sidebar__icon-pic">-->
+                                <!--</span>-->
+                                <span class="sidebar__text sidebar__text_main">Главная</span>
                             </div>
                         </li>
                         <li class="sidebar__item">
-                                <div class="sidebar__item">
-                                    <span class="sidebar__icon"><img src="img/feed-icon.png" height="18" width="20" alt="feed" class="sidebar__icon-pic"/> </span>
-                                    <span class="sidebar__text">Отзывы</span>
-                                </div>
+                            <div class="sidebar__item">
+                                <!--<span class="sidebar__icon"><img src="img/feed-icon.png" height="18" width="20" alt="feed" class="sidebar__icon-pic"/> </span>-->
+                                <a href="feeds.html" class="sidebar__text  sidebar__text_feeds">Отзывы</a>
+                            </div>
                         </li>
                         <li class="sidebar__item">
                             <div class="sidebar__item">
-                               <span class="sidebar__icon"> <img src="img/wallet-icon.png" height="16" width="19" alt="wallet" class="sidebar__icon-pic"></span>
-                                <span class="sidebar__text">Тарифы</span>
+                                <!--<span class="sidebar__icon"> <img src="img/wallet-icon.png" height="16" width="19" alt="wallet" class="sidebar__icon-pic"></span>-->
+                                <a href="tarif.html" class="sidebar__text  sidebar__text_price">Тарифы</a>
                             </div>
 
                         </li>
@@ -111,7 +115,7 @@
                                 <img src="img/layer-6.jpg" alt="blackhole" class="news__image-pic">
                             </div>
                             <div class="news__content">
-                                <p class="news__date">12.10.2016</p>
+                                <span class="news__date">12.10.2016</span>
                                 <h4 class="news__title">Черная дыра скидок!</h4>
                                 <p class="news__text">Ключевым технологическим партнером GrowUp является дата-центр Миран, расположенный всего лишь в 500 метрах от здания, а значит, скорость интернета будет стабильной в любое время суток. Коворкинг работает в формате 24/7.<br>Используйте шкаф для хранения личных вещей. </p>
                             </div>
@@ -121,7 +125,7 @@
                                 <img src="img/layer-7.jpg" alt="gifts" class="news__image-pic">
                             </div>
                             <div class="news__content">
-                                <p class="news__date">01.02.2016</p>
+                                <span class="news__date">01.02.2016</span>
                                 <h4 class="news__title">Заражай друзей, получай призы!</h4>
                                 <p class="news__text">Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет выходить на новые уровни развития. Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с инвесторами или менторами для резидентов. </p>
                             </div>
@@ -131,7 +135,7 @@
                                 <img src="img/layer-9.jpg" alt="workplace" class="news__image-pic">
                             </div>
                             <div class="news__content">
-                                <p class="news__date">22.12.2015</p>
+                                <span class="news__date">22.12.2015</span>
                                 <h4 class="news__title">Новое рабочее место для бизнесменов.</h4>
                                 <p class="news__text">Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в себя: кухонную зону и зону релакса.
                                     <br>Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой, чайником, кофе машиной, посудой.</p>
@@ -140,18 +144,20 @@
                     </ul>
                 </div>
                 <nav class="pagination">
-                    <div class="pagination__text">Страница 1 из 7</div>
-                    <ul class="pagination__list">
-                        <li class="pagination__item">&lt<a href=""></a></li>
-                        <li class="pagination__item">1<a href=""></a></li>
-                        <li class="pagination__item">2<a href=""></a></li>
-                        <li class="pagination__item">3<a href=""></a></li>
-                        <li class="pagination__item">4<a href=""></a></li>
-                        <li class="pagination__item">5<a href=""></a></li>
-                        <li class="pagination__item">6<a href=""></a></li>
-                        <li class="pagination__item">7<a href=""></a></li>
-                        <li class="pagination__item">&gt<a href=""></a></li>
-                    </ul>
+                    <div class="pagination__clearfix">
+                        <ul class="pagination__list">
+                            <li class="pagination__item pagination__text">Страница 1 из 7</li>
+                            <li class="pagination__item"><a class="pagination__link" href="">&lt</a></li>
+                            <li class="pagination__item pagination__item_active">1<a class="pagination__link" href="#"></a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="">4</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="">5</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="">6</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="">7</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="">&gt</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -159,7 +165,7 @@
     <footer>
         <div class="footer">
             <div class="footer__container">
-                <div class="footer__text">Сделано с любовью и старанием на курсе «HTML + CSS» в <strong><a href="http://www.loftschool.ru" target="_blank">LoftSchool</a></strong>. Автор работы: <strong>Прохладов Вадим</strong></div>
+                <div class="footer__text">Сделано с любовью и старанием <br> на курсе «HTML + CSS» в <a href="http://www.loftschool.ru" target="_blank">LoftSchool</a> <br>Автор работы: <strong>Анна Никитина</strong></div>
                 <div class="footer__logo"><img src="img/logo-fig.png" alt="logo" class="footer__logo-pic"></div>
                 <div class="footer__social">
                     <h4 class="footer__title">Наши социальные сети</h4>
