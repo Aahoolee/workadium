@@ -51,7 +51,7 @@
                         <li class="sidebar__item">
                             <div class="sidebar__item">
                                 <!--<span class="sidebar__icon"> <img src="img/wallet-icon.png" height="16" width="19" alt="wallet" class="sidebar__icon-pic"></span>-->
-                                <a href="tarif.html" class="sidebar__text  sidebar__text_price">Тарифы</a>
+                                <a href="price.html" class="sidebar__text  sidebar__text_price">Тарифы</a>
                             </div>
 
                         </li>
@@ -116,7 +116,7 @@
                         <ul class="pagination__list">
                             <li class="pagination__item pagination__text">Страница 1 из 7</li>
                             <li class="pagination__item"><a class="pagination__link" href="">&lt</a></li>
-                            <li class="pagination__item pagination__item_active">1<a class="pagination__link" href="#"></a></li>
+                            <li class="pagination__item"><span class="pagination__link pagination__item_active">1</span></li>
                             <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
                             <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
                             <li class="pagination__item"><a class="pagination__link" href="">4</a></li>
@@ -132,7 +132,7 @@
         <div class="discont">
             <!--<div class="discont_pattern"><img src="img/pattern.png" alt=""></div>-->
             <div class="discont__info">
-                <p class="discont__info">Для наших новых клиентов мы предлагаем скидку 50% на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
+                <p class="discont__info">Для наших новых клиентов мы предлагаем <a class="discont__sale">скидку 50%</a> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</p>
             </div>
         </div>
         <form action="" class="form">
@@ -156,21 +156,23 @@
                     <div class="form__usertext">
                         <label for="text">Текст отзыва</label>
                     </div>
-                    <input name="text" class="form__userlink-table" placeholder="Мне понравилось">
+                    <textarea name="text" class="form__userlink-table" placeholder="Мне понравилось"></textarea>
                 </div>
                 <div class="form__send">
                     <div class="form__photo">
                         <div class="form__send-photo">
                             <label for="photo">Отображать фото в отзыве?</label>
                         </div>
-                        <div class="form__radio-block">
+                        <label class="form__radio-block">
                             <input type="radio" class="form__radio" name="photo" value="yes">
-                            <label for="form__radio"">Да</label>
-                        </div>
-                        <div class="form__radio-block">
+                            <span class="form__radio-button"></span>
+                            <span class="form__radio-label"">Да</span>
+                        </label>
+                        <label class="form__radio-block">
                             <input type="radio" class="form__radio" name="photo" value="no">
-                            <label for="radio">Нет</label>
-                        </div>
+                            <span class="form__radio-button"></span>
+                            <span class="form__radio-label"">Нет</span>
+                        </label>
                     </div>
                     <div class="form__button">
                         <button class="form__send-button">Отправить</button>
@@ -182,7 +184,7 @@
     </div>
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__text">Сделано с любовью и старанием <br> на курсе «HTML + CSS» в <a href="http://www.loftschool.ru" target="_blank">LoftSchool</a> <br>Автор работы: <strong>Анна Никитина</strong></div>
+            <div class="footer__text">Сделано с любовью и старанием <br> на курсе «HTML + CSS» в <a href="http://www.loftschool.ru" class="footer__text-link" target="_blank">LoftSchool</a> <br>Автор работы: <strong>Анна Никитина</strong></div>
             <div class="footer__logo"><img src="img/logo-fig.png" alt="logo" class="footer__logo-pic"></div>
             <div class="footer__social">
                 <h4 class="footer__title">Наши социальные сети</h4>
