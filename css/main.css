@@ -97,21 +97,19 @@ li{
 .header{
     background-color: #27273e;
     min-height: 77px;
+    position: relative;
 
 }
 
 .header__clearfix{
-    width: 1100px;
-    padding-top: 13px;
-    padding-right: 20px;
-    padding-left: 20px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-
+    width: 1060px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: inline-block;
 }
+
 .header__logo{
     box-sizing: border-box;
     float: left;
@@ -143,6 +141,7 @@ li{
     font-weight: 700;
     font-size: 14px;
     text-align: right;
+    text-decoration: underline;
     background: none;
     padding-left: 81px;
     margin-top: -8px;
@@ -159,14 +158,28 @@ li{
 
 .header__content-schedule-work{
     display: none;
-    width: 162px;
-    height: 71px;
-    background-image: url("../img/schedule-hover.png");
+    width: 160px;
+    height: 70px;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 5px 2px 0 #cacaca;
+    /*background-image: url("../img/schedule-hover.png");*/
     position: absolute;
-    right: 276px;
-    top: 70px;
+    right: 3px;
+    top: 65px;
     /*text-align: center;*/
-    z-index: 2;
+    z-index: 50;
+
+}
+
+.header__content-schedule-work:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -12px;
+    border-right: 12px solid transparent;
+    border-bottom: 14px solid #ffffff;
+    border-left: 12px solid transparent;
 }
 
 .header__content-schedule-day{
@@ -532,6 +545,10 @@ li{
     color: #27273e;
 }
 
+.pagination__link:hover{
+    color: #ec1e79;
+}
+
 .pagination__item_active{
     background-color: #27273e;
     /*width: 25px;*/
@@ -624,6 +641,7 @@ li{
 
 .footer__item-icon{
     /*padding-left: 4px;*/
+    vertical-align: middle;
 }
 
 .footer__list{
