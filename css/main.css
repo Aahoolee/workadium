@@ -150,10 +150,12 @@ li{
 
 .header__content-schedule:hover {
     color: #769dcd;
+    transition: .5s;
 }
 
 .header__content-schedule:hover + .header__content-schedule-work{
     display: block;
+    transition: .5s;
 }
 
 .header__content-schedule-work{
@@ -280,6 +282,7 @@ li{
 
 .sidebar__text:hover{
     color: #221f1f;
+    transition: 1s;
 }
 
 .sidebar__text:before{
@@ -524,6 +527,7 @@ li{
 
 .pagination__item:not(:first-child):hover{
     color: #ec1e79;
+    transition: .5s;
 }
 
 .pagination__link{
@@ -547,6 +551,7 @@ li{
 
 .pagination__link:hover{
     color: #ec1e79;
+    transition: .5s;
 }
 
 .pagination__item_active{
@@ -637,6 +642,7 @@ li{
 
 .footer__item:hover{
     background-color: #ec1e79;
+    transition: .5s;
 }
 
 .footer__item-icon{
