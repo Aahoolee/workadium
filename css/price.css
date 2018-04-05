@@ -139,7 +139,7 @@ li{
     height: 70px;
     background: #ffffff;
     border-radius: 3px;
-    box-shadow: 0 5px 2px 0 #cacaca;
+    box-shadow: 2px 2px 0 0 rgba(55, 55, 55, .1);
     /*background-image: url("../img/schedule-hover.png");*/
     position: absolute;
     right: 3px;
@@ -244,6 +244,7 @@ li{
     opacity: 0;
     margin-top: -1px;
 }
+
 
 .sidebar__text_feeds:hover::before{
     opacity: 100;
@@ -448,6 +449,7 @@ li{
 .winter{
     padding-top: 10px;
 }
+
 
 .partners__pic:hover{
     filter: grayscale(0);
