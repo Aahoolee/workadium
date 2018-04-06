@@ -1,0 +1,40 @@
+.sidebar__text::before,
+.sidebar__text::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    top: -3px;
+    left: 0;
+    transition: 0.3s;
+
+}
+
+.sidebar__text_main::before{
+    background: url("img/main_icon_red.png");
+}
+
+.sidebar__text_main::after{
+    background: url("img/main-icon.png");
+}
+
+.sidebar__text_feeds::before{
+    background: url("img/feed_icon_black.png");
+}
+
+.sidebar__text_feeds::after{
+    background: url("img/feed_icon_black.png");
+}
+
+.sidebar__text_price::before{
+    background: url("img/wallet-icon.png");
+}
+
+.sidebar__text_price::after{
+    background: url("img/wallet-icon-black.png");
+}
+
+.sidebar__text:hover::after{
+    opacity: 0;
+}
+
