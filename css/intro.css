@@ -42,6 +42,8 @@ body{
     position: relative;
 }
 
+
+
 .intro__animation{
     content: "";
     position: absolute;
@@ -65,18 +67,18 @@ body{
     margin-bottom: 20px;
 }
 
-.intro__button{
-    width: 176px;
-    height: 38px;
-    border: solid 3px #ec1e79;
-    display: block;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 38px;
-    letter-spacing: 1px;
-    margin-left: 2px;
-}
+/*.intro__button{*/
+    /*width: 176px;*/
+    /*height: 38px;*/
+    /*border: solid 3px #ec1e79;*/
+    /*display: block;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 700;*/
+    /*font-size: 12px;*/
+    /*line-height: 38px;*/
+    /*letter-spacing: 1px;*/
+    /*margin-left: 2px;*/
+/*}*/
 
 .intro__but{
     content: "";
@@ -85,6 +87,15 @@ body{
     background: transparent;
     color: #ec1e79;
     text-decoration: none;
+
+    border: solid 3px #ec1e79;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    margin-left: 2px;
 
 }
 
