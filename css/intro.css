@@ -42,8 +42,6 @@ body{
     position: relative;
 }
 
-
-
 .intro__animation{
     content: "";
     position: absolute;
@@ -55,7 +53,6 @@ body{
 
 .intro__anima{
     animation: intro-animation 1s;
-
 }
 
 .intro__logo{
@@ -66,19 +63,6 @@ body{
 .intro__logo-pic{
     margin-bottom: 20px;
 }
-
-/*.intro__button{*/
-    /*width: 176px;*/
-    /*height: 38px;*/
-    /*border: solid 3px #ec1e79;*/
-    /*display: block;*/
-    /*text-transform: uppercase;*/
-    /*font-weight: 700;*/
-    /*font-size: 12px;*/
-    /*line-height: 38px;*/
-    /*letter-spacing: 1px;*/
-    /*margin-left: 2px;*/
-/*}*/
 
 .intro__but{
     content: "";
@@ -96,7 +80,11 @@ body{
     line-height: 38px;
     letter-spacing: 1px;
     margin-left: 2px;
+    transition: .5s;
+}
 
+.intro__button{
+    transition: .5s;
 }
 
 .intro__button:hover{
@@ -104,12 +92,8 @@ body{
     content: "перейти на сайт";
     font-size: 12px;
     color: white;
-    transition: .3s;
-
 }
 
 .intro__button:hover .intro__but{
     color: white;
-    transition: .3s;
-
 }
